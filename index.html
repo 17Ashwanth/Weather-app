@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Wheather.org</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstarp and js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Assistant:wght@500&family=Cabin:wght@600&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="app-wrap">
+       <header>
+        <form class="d-flex justify-content-center" role="search">
+            <input class="search-box me-3 w-50 mt-3" type="search" placeholder="Search for a City...." aria-label="Search" autocomplete="off" id="inputname">
+            <button class="btn btn-outline-warning mt-3 me-2" type="button" onClick="search()">Search</button>
+            <a href="index.html" class="btn btn-outline-warning mt-3 me-2">Refresh</a>
+        </form>
+       </header> 
+       <p class="fixed">For accurate weather please refersh the page after every search!</p>
+       <main>
+        <section class="location">
+            <div class="wheather-img" id="icon"><img src=""></div>
+            <div class="date"></div>
+        </section>
+        <div class="current">
+            <div class="temp" id="temp"></div>
+            <div class="place">
+                <p class="city" id="city"></p>
+                <p class="country" id="country"></p>
+            </div>
+            <div class="wheather" id="wheather"></div>
+            <div class="high-low">
+                 <i id="high"></i>&nbsp;&nbsp;<i" id="low"></i></div>
+        </div>
+       </main>
+            <div class="other">
+                <div class="wind-img">
+                    <h3 class="units" id="wind"></h3>
+                </div>
+                <div class="humidity-img">
+                    <h3 class="units" id="hum"></h3>
+                </div>
+                <div class="pressure-img">
+                    <h3 class="units" id="pres"></h3>
+                </div>
+            </div>
+    </div>    
+</body>
+<!-- js external link -->
+<script src="index.js">
+
+</script>
+</html>
